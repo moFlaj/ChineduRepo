@@ -24,7 +24,6 @@ while(runProgram < 10){
 				noOfTries++
 				
 				if(noOfTries == 2){
-					guessAnswer = false
 					noOfTries = 0
 					break
 }
