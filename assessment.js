@@ -145,6 +145,7 @@ function showAnswerForQ(question, answers){
 
 const prompt = require('prompt-sync')()
 let runQuestionnaire = 0
+let totalScore = 0
 let allQuestions = ["What is the capital of Nigeria?", "Who is the president of Nigeria?", "Which of these teams won UCL 2025?", "Product of 5 and 6 is?", "What year did Nigeria gain independence?", "10 divided by 5 is?", "Who scored the winning penalty in the final of the FIFA world cup 2022?", "Which of these options is not a primitive data type?", "One of these is not a keyword in java?", "What is the operator '//' called in python?"]
 
 const options = {
@@ -164,7 +165,7 @@ while(runQuestionnaire < 10){
 	console.log('Test of ten questions')
 	let runTenQuestions = true
 	let answeredQuestions = []
-	let totalScore = 0
+	
 	while(runTenQuestions){
 		if(runQuestionnaire == 10){
 				runTenQuestions = false
